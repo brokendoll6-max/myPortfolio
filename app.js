@@ -70,3 +70,27 @@ contactForm.addEventListener("submit", (e) => {
         contactPopup.classList.add("hidden");
     }, 300);
 });
+
+//galerii mobiilivaates
+const mobileGalleryImage = document.querySelector('#mobile-gallery-image');
+
+const galleryImages = [
+    'lebo.jpg',
+    'lill.jpg',
+    'fun.jpg',
+    'tydruk.jpg',
+    'arhitekt.jpg',
+    'kook.jpg'
+];
+
+let currentGalleryImageIndex = 0;
+
+mobileGalleryImage.addEventListener('click', () => {
+    currentGalleryImageIndex++;
+
+    if (currentGalleryImageIndex >= galleryImages.length) {
+        currentGalleryImageIndex = 0;
+    }
+
+    mobileGalleryImage.src = 'images/' + galleryImages[currentGalleryImageIndex];
+});
