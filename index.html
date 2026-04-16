@@ -6,6 +6,7 @@
     <title>Minu Portfoolio</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
     <div class="container">
@@ -24,15 +25,56 @@
                     </div>
 
                     <ul class="nav-links">
-                        <li><a href="#">Kodu</a></li>
-                        <li><a href="#">Minu tööd</a></li>
-                        <li><a href="#">Kliendid</a></li>
-                        <li><a href="#">Kontakt</a></li>
+                        <li><a href="#profiil">Kodu</a></li>
+                        <li><a href="#tood">Minu tööd</a></li>
+                        <li><a href="#kliendid">Kliendid</a></li>
+                        <li><a href="#kontakt">Kontakt</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="menu-popup" class="popup hidden">
+            <div class="popup-box menu-box">
+                <button id="close-menu" class="close-btn">✕</button>
+
+                <ul class="popup-links">
+                    <li><a href="#profiil">Kodu</a></li>
+                    <li><a href="#tood">Minu tööd</a></li>
+                    <li><a href="#kliendid">Kliendid</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+            </div>
+
+            </div> 
+
+            <div id="contact-popup" class="popup hidden">
+                <div class="contact-box">
+                        <button id="close-contact" class="close-btn">✕</button>
+
+                        <h2>Kontakt</h2>
+
+                        <p class="popup-text">
+                            placerat quis placerat. faucibus vehicula, nisi ex ullamcorper tortor.
+                            id tortor. placerat. dolor Donec massa nisi tortor. dui. libero, nibh
+                            non. nulla, Nam
+                        </p>
+
+                        <form class="kontakt-vorm">
+                            <label for="nimi-popup">Nimi</label>
+                            <input type="text" id="nimi-popup" name="nimi-popup">
+
+                            <label for="epost-popup">E-Post</label>
+                            <input type="email" id="epost-popup" name="epost-popup">
+
+                            <label for="sonum-popup">Sõnum</label>
+                            <textarea id="sonum-popup" name="sonum-popup"></textarea>
+
+                            <button type="submit">Saada</button>
+                        </form>
                 </div>
             </div>
             
-            
-            <div class="profiil">
+            <div class="profiil" id="profiil">
                 <div class="profiilipilt">
                     <img src="images/hype.jpg" alt="Profiilipilt">
 
@@ -44,18 +86,15 @@
                     <p> consequuntur nisi repellat pariatur id placeat. Culpa non consequuntur quibusdam at reprehenderit animi, quidem perspiciatis magnam atque quos molestias quod</p>
                
                     <button>Võta ühendust</button>
-                
-
+                </div>
             </div>
-            
         </div>
-    </div>
         
         
      <div class="main">
 
          <div class="tööd">
-                    <div class="headline">
+                    <div class="headline" id="tood">
                         <hr>
                         <h2>Tehtud tööd</h2>
                     </div>
@@ -78,7 +117,7 @@
 
 
                 <div class="kliendid">
-                    <div class="headline">
+                    <div class="headline" id="kliendid">
                         <hr>
                         <h2>Minu kliendid</h2>
                     </div>
@@ -114,19 +153,20 @@
 
 
 
-    <div class="kontakt">
+    <div class="kontakt" id="kontakt">
    
         <div class="headline">
             <hr>
             <h2>Kontakt</h2>
         </div>
 
-    <!-- mobiilivaade -->
-    <div class="kontakt-mobiil">
-        <button>Võta ühendust</button>
-    </div>
+        <div class="kontakt-mobiil">
+            <button class="open-contact-btn">Võta ühendust</button>
+        </div>
 
-    <!-- tahvel + desktop -->
+    
+</div>
+
     <div class="kontakt-sisu">
         <div class="kontakt-vasak">
             <p>
@@ -192,5 +232,6 @@
 
     </div>
     
+    <script src="app.js"></script>
 </body>
 </html>
