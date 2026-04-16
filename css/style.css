@@ -1,0 +1,688 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap');
+
+
+:root {
+    --primary-color-heading: #C77D9C;
+    --primary-color-heading-rgb: 199, 125, 156;
+    --secondary-color: #E5D6E8;
+    --secondarycolor-heading: #9A7E88;
+    --text-color: #2A1F2D;
+    --text-color-address: rgba(42, 31, 45, 0.7);
+    --text-button: #f5f0ec;
+    --fill-color: #EFE8E2;
+    --background-color: #EFE8E2;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+h1 {
+    font-family: "Manrope", sans-serif;
+    text-align: center;
+    font-style: bold;
+    text-transform: uppercase;
+    color: var(--primary-color-heading);
+    font-size: 48px;
+}
+h2 {
+    margin-top: 30px;
+    font-family: "Manrope", sans-serif;
+    text-align: left;
+    font-style: bold;
+    text-transform: uppercase;
+    color: var(--primary-color-heading);
+    font-size: 28px;
+}
+
+h3 {
+    margin-top: 24px;
+    font-family: "Inter", sans-serif;
+    text-align: left;
+    font-style: bold;
+    text-transform: capitalize;
+    color: var(--secondarycolor-heading);
+    font-size: 28px;
+}
+p {
+    font-family: "Inter", sans-serif;
+    text-align: center;
+    color: var(--text-color);
+    font-size: 16px;
+}
+
+
+
+.container {
+    width: 100%;
+    color: var(--text-color)
+}
+
+.menu {
+    margin: 0;
+    display: grid;
+    width: 100%;
+    padding: 0 25px;
+    box-sizing: border-box;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+
+}
+
+.page-menu {
+   justify-self: end;
+    align-self: center;
+}
+.nav-links {
+    display: none;
+}
+
+.burger {
+    display: flex;
+    flex-direction: column;
+    width: 60px;
+    height: 60px;
+    margin: 25px;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 3px solid var(--text-color);
+    background-color: var(--primary-color-heading);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
+.line {
+    width: 35px;
+    height: 4px;
+    background-color: var(--text-color);
+    border-radius: 10px;
+}
+
+
+
+.logo-span {
+    display: inline-block;
+    margin: 25px 0 0 25px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    color: var(--primary-color-heading);
+    text-transform: uppercase;
+}
+
+.profiil {
+    text-align: center;
+}
+
+.profiilipilt img {
+    display: inline-block;
+    width: 212px;
+    height: 212px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 20px;
+}
+
+.profiil-tekst {
+    display: none;
+}
+
+hr {
+    margin: 40px auto;
+    margin-bottom: 3px;
+    border: 2px solid var(--primary-color-heading);
+    border-radius: 5px;
+    width: 200px;
+    height: 2%;
+}
+
+.headline {
+    max-width: 1100px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.headline h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.tööd {
+    width: 100%;
+    text-align: center;
+}
+.galerii-mobiil {
+    margin-bottom: 80px;
+}
+.galerii-tahvel {
+    display: none;
+}
+.tööd img{
+    display: inline-block;
+    height: 250px;
+    width: 350px;
+    object-fit: cover;
+    margin: 0px;
+}
+
+.kliendid {
+    width: 100%;
+    text-align: center;
+}
+.kliendid h3 {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 0;
+}
+.kliendikaart {
+    display: inline-block;
+    border-radius: 10px;
+    margin: 20px;
+    box-sizing: border-box;
+}
+.kliendikaart span {
+    display: inline-block;
+    font-family: "Manrope", sans-serif;
+    text-align: center;
+    color: var(--secondarycolor-heading);
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgba(var(--primary-color-heading-rgb), 0.5);
+    padding: 4px 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.kaart {
+    padding: 30px;
+}
+
+.tagid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.kontakt {
+    width: 100%;
+    text-align: center;
+    margin: 40px 0;
+    margin-bottom: 40px;
+}
+
+.kontakt-mobiil {
+    display: block;
+    text-align: center;
+}
+
+
+.kontakt button {
+    background-color: var(--primary-color-heading);
+    color: var(--text-button);
+    border: 2px solid var(--text-color);
+    padding: 15px 25px;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 50px auto;
+}
+
+.kontakt-vorm {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
+.kontakt-vorm label {
+    text-align: left;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 6px;
+}
+
+.kontakt-vorm input,
+.kontakt-vorm textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px 16px;
+    border: 2px solid var(--text-color);
+    border-radius: 12px;
+    background-color: #d9d2cc;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+}
+
+.kontakt-vorm textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.kontakt-vorm button {
+    width: fit-content;
+    margin: 40px 20px 0 0 ;
+    background-color: var(--primary-color-heading);
+    color: var(--text-button);
+    border: 2px solid var(--text-color);
+    padding: 12px 40px;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.kontakt-parem h3 {
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    color: var(--text-color-address);
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.kontakt-parem p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 24px;
+}
+
+.kontakt-parem img {
+    width: 18px;
+    height: 18px;
+}
+
+.kontakt-parem {
+    display: none;
+}
+
+
+.kontakt-sisu {
+    display: none
+}
+
+.social {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 80px;
+}
+
+.social img {
+    display: inline-block;
+    width: auto;
+    height: 35px;
+    object-fit: cover;
+    margin: 10px;
+}
+
+.footer {
+    width: 100%;
+    padding-top: 40px ;
+    padding-bottom: 20px;
+}
+.footer p {
+    text-align: center;
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    .burger {
+        display: none;
+    }
+    .menu {
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 1fr;
+    }
+    .menu ul{
+        list-style: none;
+    }
+    .menu ul li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    .menu a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: var(--primary-color-heading);
+        font-style: bold;
+        font-size: 18px;
+    }
+    .nav-links {
+        display: block;
+        gap: 20px;
+        margin-right: 20px;
+    }
+
+    .profiil {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        gap: 20px;
+        align-items: center;
+        margin-bottom: 50px;
+    }  
+
+    .profiil-tekst {
+        display: block;
+        text-align: left;
+        justify-content: start;
+    }
+    .profiil-tekst h1 {
+        display: none;
+    }   
+
+    .profiil-tekst p {
+    
+        text-align: left;
+        margin-top: 20px;
+        margin-right: 30px;
+    }
+
+    .profiil button {
+    background-color: var(--primary-color-heading);
+    color: var(--text-button);
+    border: 2px solid var(--text-color);
+    padding: 10px 25px;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 30px auto;
+    }
+
+    body {
+        width: 100%;
+    }
+    hr {
+        margin-left: 58px;
+        border: 2px solid var(--primary-color-heading);
+        border-radius: 5px;
+        width: 200px;
+        height: 2%;
+    }
+
+    .headline h2 {
+        padding-left: 60px;
+        text-align: start;
+    }
+
+    .galerii-mobiil {
+        display: none;
+    }
+
+    .galerii-tahvel {
+        display: grid;
+    grid-template-columns: repeat(2, 350px); 
+    gap: 20px; 
+    justify-content: center; 
+    margin-bottom: 80px;
+    
+    }
+    .galerii-tahvel img {
+        height: 250px;
+        width: 350px;
+        object-fit: cover;
+    }
+    
+    .tagid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .headline-some h2 {
+    text-align: center;
+    margin-top: 0;
+    }
+
+    .kontakt-mobiil button {
+        display: none;
+     }   
+
+    .kontakt-mobiil {
+        display: none;
+    }
+
+    .kontakt-sisu {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 100px;
+    max-width: 900px;
+    margin: 0 px;
+    padding: 0 60px;
+    box-sizing: border-box;
+    }
+
+    .kontakt-vasak p {
+    text-align: left;
+    margin: 0 0 0 0;
+    }
+
+    .social h2 {
+    text-align: center;
+    padding-left: 0;
+    }
+
+    .social hr {
+    margin: 40px auto 3px auto;
+    }
+
+}
+
+@media (min-width: 1025px) {
+     .burger {
+        display: none;
+    }
+    .menu {
+        max-width: 1400px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 1fr;
+    }
+    .menu ul{
+        list-style: none;
+    }
+    .menu ul li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+    .menu a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: var(--primary-color-heading);
+        font-style: bold;
+        font-size: 18px;
+    }
+    .nav-links {
+        display: block;
+        gap: 20px;
+        margin-right: 20px;
+    }
+
+    .profiil {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 0 60px;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        gap: 20px;
+        align-items: center;
+        margin-bottom: 50px;
+    }  
+
+    .profiil-tekst {
+        display: block;
+        text-align: left;
+        justify-content: start;
+    }
+    .profiil-tekst h1 {
+        display: none;
+    }   
+
+    .profiil-tekst p {
+    
+        text-align: left;
+        margin-top: 20px;
+        margin-right: 30px;
+    }
+
+    .profiil button {
+    background-color: var(--primary-color-heading);
+    color: var(--text-button);
+    border: 2px solid var(--text-color);
+    padding: 10px 25px;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 30px auto;
+    }
+
+    body {
+        width: 100%;
+    }
+    hr {
+        margin-left: 58px;
+        border: 2px solid var(--primary-color-heading);
+        border-radius: 5px;
+        width: 200px;
+        height: 2%;
+    }
+
+    .headline h2 {
+        padding-left: 60px;
+        text-align: start;
+    }
+
+    .kontakt-mobiil {
+        display: none;
+    }
+
+    .kontakt-sisu {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        align-items: start;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .galerii-mobiil {
+        display: none;
+    }
+
+    .galerii-tahvel {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        max-width: 1100px;
+        margin: 0 auto 80px auto;
+    }
+
+    .galerii-tahvel img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+   
+    .kliendikaart {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .kaart {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        column-gap: 28px;
+        align-items: center;
+        text-align: left;
+        border: 1px dashed rgba(var(--primary-color-heading-rgb), 0.5);
+        padding: 30px;
+    }
+
+    .kaart img {
+        width: 110px;
+        height: 110px;
+        object-fit: contain;
+        grid-column: 1;
+        grid-row: 1 / span 3;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .kaart h3 {
+    grid-column: 2;
+    margin: 10px 0 14px 0;
+    text-align: left;
+    }
+
+    .kaart p {
+    grid-column: 2;
+    margin: 14px 0 0 0;
+    text-align: left;
+
+    }
+
+   .kaart div {
+    grid-column: 2;
+    display: inline-block;
+    margin-right: 10px;
+    }
+
+    .kaart span {
+    display: inline-block;
+    margin: 0 10px 0 0;
+}
+
+    .kontakt-sisu {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 100px;
+        align-items: start;
+        max-width: 1100px;
+        margin: 0 auto;
+        margin-top: 60px;
+        padding: 0 60px;
+        box-sizing: border-box;
+    }
+
+    .kontakt-vasak p {
+        text-align: left;
+    }
+
+    .kontakt-parem {
+        display: block;
+    }
+
+    .kontakt-parem h3 {
+        text-align: left;
+    }
+
+   
+    .social h2 {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .social hr {
+        margin: 40px auto 3px auto;
+    }
+}
