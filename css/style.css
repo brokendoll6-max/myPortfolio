@@ -95,8 +95,6 @@ p {
     cursor: pointer;
 }
 
-
-
 .line {
     width: 35px;
     height: 4px;
@@ -358,6 +356,8 @@ hr {
         font-style: bold;
         font-size: 18px;
     }
+
+
     .nav-links {
         display: block;
         gap: 20px;
@@ -685,4 +685,72 @@ hr {
     .social hr {
         margin: 40px auto 3px auto;
     }
+}
+
+/* MENÜÜ */
+.nav-links a {
+    display: inline-block;
+    transition: transform 0.2s ease, color 0.2s ease, font-weight 0.2s ease;
+}
+
+.nav-links a:hover {
+    transform: translateY(-2px) scale(1.06);
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+/* NUPUD */
+button {
+    transition: transform 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px) scale(1.04);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+button:active {
+    transform: scale(0.98);
+    color: var(--text-color);
+}
+
+/* PILDID */
+.tööd img,
+.galerii-tahvel img,
+.kaart img {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.tööd img:hover,
+.galerii-tahvel img:hover,
+.kaart img:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+}
+
+/* SOTSIAALIKOOD */
+.social a {
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.social a:hover {
+    transform: translateY(-2px) scale(1.12);
+}
+
+.kontakt-vorm input,
+.kontakt-vorm textarea {
+    transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.kontakt-vorm input:hover,
+.kontakt-vorm textarea:hover {
+    transform: translateY(-1px);
+}
+
+.kontakt-vorm input:focus,
+.kontakt-vorm textarea:focus {
+    outline: none;
+    border-color: var(--primary-color-heading);
+    box-shadow: 0 0 0 4px rgba(var(--primary-color-heading-rgb), 0.18);
 }
